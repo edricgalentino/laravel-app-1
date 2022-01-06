@@ -5,7 +5,7 @@
     --yellow: #feac5e;
     --purple: #c779d0;
     --blue: #4bc0c8;
-    --white: #ffffff;
+    --white: aliceblue;
     --violet: #9c6cebf3;
     --light-yellow: #fbd485;
     --pink: #ef629f;
@@ -19,7 +19,7 @@ body {
     background-color: aliceblue;
     margin: -0.1rem 0 0 0;
     padding: 0;
-    background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+    /* background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8); */
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     height: fit-content;
@@ -45,12 +45,18 @@ footer {
     width: inherit;
     height: 3rem;
     background-color: var(--dark-background);
-    color: var(--);
+    color: var(--white);
     display: flex;
 }
 
+.sidebar {
+    background-color: var(--dark-background);
+}
+
 header.header h3,
-footer h3 {
+footer h3,
+.sidebar li a {
     margin: auto;
     align-items: center;
+    color: var(--white);
 }
